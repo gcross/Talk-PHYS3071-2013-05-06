@@ -1,5 +1,7 @@
 headings = [ // {{{
     "Quantum Mechanics",
+    "Quantum Mechanics: Meet the cats",
+    "Quantum Mechanics: Normalization",
 ] // }}}
 
 script = function(){ return [ // {{{
@@ -36,7 +38,8 @@ script = function(){ return [ // {{{
         "center_cat_cover"
     ),
     // }}}
-    "Introducing the cats",
+    "Introducing the cats", // Introducing the cats {{{
+    rotateNextHeading(),
     hireAndFadeIn(0.5,"cat_in_box_awake"),
     "",
     hireAndFadeIn(0.5,"cat_in_box_asleep"),
@@ -45,4 +48,47 @@ script = function(){ return [ // {{{
     "",
     hireAndFadeIn(0.5,"array_asleep"),
     "",
+    parallel(
+        smooth(0.5,"array_awake","y",136.444),
+        fadeOut(0.5,"array_awake"),
+        smooth(0.5,"array_asleep","y",-136.444),
+        fadeOut(0.5,"array_asleep"),
+        sequence(
+            wait(0.25),
+            hireAndFadeIn(0.5,"array_both")
+        )
+    ),
+    fire("array_awake","array_asleep"),
+    "",
+    hireAndFadeInUseActors(0.5,"array_both_highlight_first","array_both_cover_second"),
+    // }}}
+    "Normalization", // {{{
+    fadeOutAndFire(0.5,
+        "cat_in_box_awake",
+        "cat_in_box_asleep",
+        "array_both",
+        "array_both_highlight_first"
+    ),
+    fire("array_both_cover_second"),
+    rotateNextHeading(),
+    hireAndFadeIn(0.5,"normalization_backdrop"),
+    "",
+    hireAndFadeIn(0.5,"normalization_tag_1"),
+    "",
+    hireAndFadeIn(0.5,"normalization_1_1"),
+    "",
+    hireAndFadeIn(0.5,"normalization_1_2"),
+    "",
+    hireAndFadeIn(0.5,"normalization_tag_2"),
+    "",
+    hireAndFadeIn(0.5,"normalization_2_1"),
+    "",
+    hireAndFadeIn(0.5,"normalization_2_2"),
+    "",
+    hireAndFadeIn(0.5,"normalization_tag_3"),
+    "",
+    hireAndFadeIn(0.5,"normalization_3_1"),
+    "",
+    hireAndFadeIn(0.5,"normalization_3_2"),
+    // }}}
 ]} // }}}
