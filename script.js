@@ -4,6 +4,10 @@ headings = [ // {{{
     "Quantum Mechanics: Normalization",
     "Quantum Mechanics: Observable",
     "Quantum Mechanics: Hamiltonian (Energy)",
+    "Quantum Mechanics: Expectations",
+    "Boundary Value Problems",
+    "Boundary Value Problems: Discretization",
+    "LAPACK to the rescue!",
 ] // }}}
 
 script = function(){ return [ // {{{
@@ -167,5 +171,70 @@ script = function(){ return [ // {{{
     ),
     fire("awake_cat_matrix"),
     fire("asleep_cat_matrix"),
+    // }}}
+    "Expectations", // {{{
+    fadeOutAndFire(0.5,"middle_big_Z"),
+    rotateNextHeading(),
+    hireAndFadeIn(0.5,"expectation_inputs"),
+    "",
+    hireAndFadeIn(0.5,"expectation_outputs"),
+    "",
+    hireAndFadeIn(0.5,"expectation_normalization"),
+    "",
+    hireAndFadeIn(0.5,"expectation_alternative"),
+    // }}}
+    "Boundary Value Problem", // {{{
+    fadeOutAndFire(0.5,
+        "expectation_inputs",
+        "expectation_outputs",
+        "expectation_normalization",
+        "expectation_alternative"
+    ),
+    rotateNextHeading(),
+    hireAndFadeIn(0.5,"BVP_line"),
+    "",
+    hireAndFadeIn(0.5,"BVP_1"),
+    "",
+    hireAndFadeIn(0.5,"BVP_2"),
+    "",
+    hire("BVP_3_cover"),
+    hireUseActor("BVP_3","BVP_3_cover"),
+    linear(0.5,"BVP_3_cover","y",100),
+    fire("BVP_3_cover"),
+    hireAndFadeIn(0.5,"BVP_4"),
+    // }}}
+    "Boundary Value Problem: Discretization", // {{{
+    fadeOutAndFire(0.5,
+        "BVP_line",
+        "BVP_1",
+        "BVP_2",
+        "BVP_3",
+        "BVP_4"
+    ),
+    rotateNextHeading(),
+    hireAndFadeIn(0.5,"BVP_eq_big"),
+    "",
+    hireAndFadeInUseActors(0.5,"BVP_eq_known","BVP_eq_unknown"),
+    "",
+    fadeOutAndFire(0.5,"BVP_eq_known","BVP_eq_unknown"),
+    hireAndFadeIn(0.5,"BVP_arrays"),
+    "",
+    fadeOutAndFire(0.5,"BVP_eq_big"),
+    smooth(0.5,"BVP_arrays","y",-340),
+    "",
+    hireAndFadeInUseActors(0.5,"allocate_tag","allocate_statement"),
+    "",
+    hireAndFadeInUseActors(0.5,"deallocate_tag","deallocate_statement"),
+    // }}
+    "LAPACK to the rescue", // {{{
+    fadeOutAndFire(0.5,
+        "allocate_tag",
+        "allocate_statement",
+        "deallocate_tag",
+        "deallocate_statement",
+        "BVP_arrays"
+    ),
+    rotateNextHeading(),
+    hireAndFadeIn(0.5,"SGTSV"),
     // }}}
 ]} // }}}
