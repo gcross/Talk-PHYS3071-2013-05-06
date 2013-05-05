@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="768"
+   width="1024"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="outer_product.svg">
+  <metadata
+     id="metadata26767">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs26765" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1156"
+     id="namedview26763"
+     showgrid="false"
+     inkscape:zoom="0.82987516"
+     inkscape:cx="466.39654"
+     inkscape:cy="276.37091"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g4450" />
+  <rect
+     y="-3.0517578e-05"
+     x="2"
+     width="1022"
+     style="fill:#000000;fill-opacity:1;stroke:none;display:inline"
+     id="rect3686"
+     height="130"
+     sodipodi:insensitive="true" />
+  <text
+     inkscape:label="#text7392"
+     sodipodi:linespacing="125%"
+     id="text3002"
+     y="214.69116"
+     x="13.135643"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold"
+     xml:space="preserve"><tspan
+       id="tspan3006"
+       sodipodi:role="line"
+       x="13.135643"
+       y="214.69116" /></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+     x="1291.7606"
+     y="645.08997"
+     id="text3991"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3993"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold"
+     x="31.135643"
+     y="736.69116"
+     id="text4013"
+     sodipodi:linespacing="125%"
+     inkscape:label="#text7392"><tspan
+       id="tspan4023"
+       sodipodi:role="line"
+       x="31.135643"
+       y="736.69116" /></text>
+  <g
+     id="g4450">
+    <g
+       id="outer_product_defined"
+       inkscape:label="#g4477">
+      <text
+         inkscape:label="#text7392"
+         sodipodi:linespacing="125%"
+         id="opd"
+         y="136.69116"
+         x="31.135643"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold"
+         xml:space="preserve"><tspan
+           id="tspan4135"
+           y="136.69116"
+           x="31.135643"
+           sodipodi:role="line" /><tspan
+           y="181.69116"
+           x="31.135643"
+           sodipodi:role="line"
+           id="tspan4139">complex :: a(2), b(2), outer_product(2,2)</tspan><tspan
+           y="226.69116"
+           x="31.135643"
+           sodipodi:role="line"
+           id="tspan4141">do i = 1, 2</tspan><tspan
+           y="271.69116"
+           x="31.135643"
+           sodipodi:role="line"
+           id="tspan4147"></tspan><tspan
+           id="tspan4403"
+           y="316.69116"
+           x="31.135643"
+           sodipodi:role="line"></tspan><tspan
+           id="tspan4405"
+           y="361.69116"
+           x="31.135643"
+           sodipodi:role="line"></tspan><tspan
+           id="tspan4407"
+           y="406.69116"
+           x="31.135643"
+           sodipodi:role="line">end do</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 13.255006,436.62486 1001.355394,0"
+         id="path4342"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold"
+         x="117.13565"
+         y="272.69116"
+         id="text4361"
+         sodipodi:linespacing="125%"
+         inkscape:label="#text7392"><tspan
+           id="tspan4369"
+           sodipodi:role="line"
+           x="117.13565"
+           y="272.69116">do j = 1, 2</tspan><tspan
+           id="tspan4371"
+           sodipodi:role="line"
+           x="117.13565"
+           y="317.69116" /><tspan
+           id="tspan4375"
+           sodipodi:role="line"
+           x="117.13565"
+           y="362.69116">end do</tspan></text>
+      <text
+         inkscape:label="#text7392"
+         sodipodi:linespacing="125%"
+         id="text4409"
+         y="312.69116"
+         x="217.13565"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold"
+         xml:space="preserve"><tspan
+           y="312.69116"
+           x="217.13565"
+           sodipodi:role="line"
+           id="tspan4415">outer_product(i,j) = a(i)*b(j)</tspan></text>
+    </g>
+  </g>
+</svg>

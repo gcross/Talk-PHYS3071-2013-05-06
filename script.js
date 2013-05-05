@@ -2,6 +2,8 @@ headings = [ // {{{
     "Quantum Mechanics",
     "Quantum Mechanics: Meet the cats",
     "Quantum Mechanics: Normalization",
+    "Quantum Mechanics: Observable",
+    "Quantum Mechanics: Hamiltonian (Energy)",
 ] // }}}
 
 script = function(){ return [ // {{{
@@ -90,5 +92,80 @@ script = function(){ return [ // {{{
     hireAndFadeIn(0.5,"normalization_3_1"),
     "",
     hireAndFadeIn(0.5,"normalization_3_2"),
+    // }}}
+    "Observables", // {{{
+    fadeOutAndFire(0.5,
+        "normalization_backdrop",
+        "normalization_tag_1",
+        "normalization_tag_2",
+        "normalization_tag_3",
+        "normalization_1_1",
+        "normalization_1_2",
+        "normalization_2_1",
+        "normalization_2_2",
+        "normalization_3_1",
+        "normalization_3_2"
+    ),
+    rotateNextHeading(),
+    hireAndFadeIn(0.5,"op_observable"),
+    "",
+    hireAndFadeIn(0.5,"op_observable_ident"),
+    "",
+    hireAndFadeIn(0.5,"op_eigensystem"),
+    "",
+    hireAndFadeIn(0.5,"op_observable_from_eigensystem"),
+    "",
+    fadeOutAndFire(0.5,
+        "op_observable",
+        "op_observable_ident",
+        "op_eigensystem"
+    ),
+    hireAndFadeIn(0.5,"outer_product_defined"),
+    // }}}
+    "Hamiltonian", // {{{
+    fadeOutAndFire(0.5,
+        "outer_product_defined",
+        "op_observable_from_eigensystem"
+    ),
+    rotateNextHeading(),
+    hireAndFadeInUseActors(0.5,
+        "cat_in_box_awake",
+        "cat_in_box_asleep"
+    ),
+    "",
+    hireAndFadeIn(0.5,"awake_cat_energy"),
+    "",
+    hireAndFadeIn(0.5,"asleep_cat_energy"),
+    "",
+    hireAndFadeIn(0.5,"awake_cat_outer_state"),
+    "",
+    hireAndFadeIn(0.5,"awake_cat_matrix"),
+    "",
+    hireAndFadeIn(0.5,"asleep_cat_outer_state"),
+    "",
+    hireAndFadeIn(0.5,"asleep_cat_matrix"),
+    "",
+    parallel(
+        fadeOutAndFire(0.5,
+            "cat_in_box_awake",
+            "cat_in_box_asleep",
+            "awake_cat_energy",
+            "asleep_cat_energy",
+            "awake_cat_outer_state",
+            "asleep_cat_outer_state"
+        ),
+        fadeOut(0.5,"awake_cat_matrix"),
+        fadeOut(0.5,"asleep_cat_matrix"),
+        smooth(0.5,"awake_cat_matrix","x",-340),
+        smooth(0.5,"awake_cat_matrix","y",100),
+        smooth(0.5,"asleep_cat_matrix","x",-340),
+        smooth(0.5,"asleep_cat_matrix","y",-100),
+        parallel(
+            wait(0.25),
+            hireAndFadeIn(0.5,"middle_big_Z")
+        )
+    ),
+    fire("awake_cat_matrix"),
+    fire("asleep_cat_matrix"),
     // }}}
 ]} // }}}
