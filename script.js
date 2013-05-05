@@ -19,5 +19,11 @@ script = function(){ return [ // {{{
         decelerate(0.5,"bottom_cat","y",0),
         decelerate(0.5,"top_cat","y",0)
     ),
+    "",
+    hireUseActor("center_cat"),
+    set("center_cat","scale",0),
+    set("center_cat","cx",512.943),
+    set("center_cat","cy",318.6725+150),
+    linear(0.5,"center_cat","scale",1),
     // }}}
 ]} // }}}
