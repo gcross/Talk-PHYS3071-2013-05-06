@@ -33,7 +33,8 @@ script = function(){ return [ // {{{
     set("center_cat","cx",512.943),
     set("center_cat","cy",318.6725+150),
     linear(0.5,"center_cat","scale",1),
-    "",
+    // }}}
+    "Introducing the cats", // {{{
     hireUseActor("center_cat_cover","center_cat"),
     fadeOutAndFire(0.5,
         "top_cat",
@@ -43,9 +44,8 @@ script = function(){ return [ // {{{
         "center_cat",
         "center_cat_cover"
     ),
-    // }}}
-    "Introducing the cats", // Introducing the cats {{{
     rotateNextHeading(),
+    "",
     hireAndFadeIn(0.5,"cat_in_box_awake"),
     "",
     hireAndFadeIn(0.5,"cat_in_box_asleep"),
